@@ -16,8 +16,9 @@ Non contiene giochi: ognuno usa la propria copia (per BT3 Recompiled: il port da
 - `blobs/<sha256>`: i file, chiamati con la loro impronta SHA-256 (ModHub controlla ogni download)
 - `games/<id>/settings.json`: le impostazioni del gioco che ModHub sa modificare
 
-Per usarlo in ModHub: Impostazioni > Sorgente del catalogo > l'indirizzo "raw" di questo repository, per esempio
-`https://raw.githubusercontent.com/<utente>/<repository>/main/`.
+È il catalogo **predefinito** di ModHub: non serve impostare niente. Il suo indirizzo per ModHub è
+`https://raw.githubusercontent.com/ibosortino-cmd/modhub-catalogo/main/` (in *Catalogo > Cambia sorgente*, campo vuoto =
+questo catalogo).
 
 Per pubblicare una mod o una nuova versione: `python publish.py <cartella-mod> --catalog public-catalog`,
 poi `python catalog_upload.py <utente>/<repository>` (dalla cartella di ModHub).
